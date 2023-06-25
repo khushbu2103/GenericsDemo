@@ -30,7 +30,7 @@ namespace GenericsDemo
 
         public static void ToPrint(char[] charArray)
         {
-            Console.WriteLine("\nString array Elements");
+            Console.WriteLine("\nString array elements");
             foreach (char elements in charArray)
             {
                 Console.Write(elements + " ");

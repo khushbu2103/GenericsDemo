@@ -11,7 +11,7 @@ namespace GenericsDemo
         static void Main(string[] args)
         {
             Console.WriteLine("please select any program");
-            Console.WriteLine("1.Without generic method\n2.With generic method");
+            Console.WriteLine("1.Without generic method");
             int option = Convert.ToInt32(Console.ReadLine());
             int[] arr = { 20, 30, 40 };
             double[] doublearr = { 20.67, 30, 40.34 };
@@ -32,9 +32,6 @@ namespace GenericsDemo
                     }
                    
             }
-           
-
-           
         }
     }
 }
