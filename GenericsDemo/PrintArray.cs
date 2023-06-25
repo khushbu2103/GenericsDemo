@@ -30,14 +30,24 @@ namespace GenericsDemo
 
         public static void ToPrint(char[] charArray)
         {
-            Console.WriteLine("\nString array elements");
+            Console.WriteLine("\nString array Elements");
             foreach (char elements in charArray)
             {
                 Console.Write(elements + " ");
             }
         }
 
-       
+        ////we can use generic method instead to this normal method
+
+        //public static void ToGenericPrint<T>(T[] array)
+        //{
+        //    Console.WriteLine("\nArray Element");
+        //    foreach (T element in array)
+        //    {
+        //        Console.Write(element + " ");
+        //    }
+            
+        //}
 
     }
 
