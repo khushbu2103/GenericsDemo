@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PrintArray.cs" />
+    <Compile Include="PrintGenericClass.cs" />
     <Compile Include="PrintGenericMethod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

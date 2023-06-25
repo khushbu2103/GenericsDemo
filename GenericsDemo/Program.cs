@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace GenericsDemo
         static void Main(string[] args)
         {
             Console.WriteLine("please select any program");
-            Console.WriteLine("1.Without generic method\n2.With generic method");
+            Console.WriteLine("1.Without generic method\n2.With generic method\n3.With generic class");
             int option = Convert.ToInt32(Console.ReadLine());
             int[] arr = { 20, 30, 40 };
             double[] doublearr = { 20.67, 30, 40.34 };
@@ -28,6 +29,15 @@ namespace GenericsDemo
                     PrintGenericMethod.ToGenericPrint<int>(arr);
                     PrintGenericMethod.ToGenericPrint(doublearr);
                     PrintGenericMethod.ToGenericPrint(chararr);
+                    Console.ReadLine();
+                    break;
+                case 3:
+                    PrintGenericClass<int> obj1 = new PrintGenericClass<int>(arr);
+                    obj1.ToPrint();
+                    PrintGenericClass<double> obj2 = new PrintGenericClass<double>(doublearr);
+                    obj2.ToPrint();
+                    PrintGenericClass<char> obj3 = new PrintGenericClass<char>(chararr);
+                    obj3.ToPrint();
                     Console.ReadLine();
                     break;
                 default:
