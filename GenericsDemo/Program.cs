@@ -21,7 +21,8 @@ namespace GenericsDemo
             double[] doublearr = { 20.67, 30, 40.34 };
             char[] chararr = { 'a', 'b', 'c', };
             int first = 30, second = 50, third = 60;
-            float x = 76.65f, y = 65.87f, z = 34.54f; 
+            float x = 76.65f, y = 65.87f, z = 34.54f;
+            string s1 = "abc", s2 = "pqr", s3 = "xyz";
             switch (option)
             {
                 case 1:
@@ -50,6 +51,8 @@ namespace GenericsDemo
                     FindMaxValue.FindMaximumValue(first, second, third);
                     Console.WriteLine("\n{0} {1} {2}", x, y, z);
                     FindMaxValue.FindMaximumValue(x, y, z);
+                    Console.WriteLine("\n{0} {1} {2}", s1, s2, s3);
+                    FindMaxValue.FindMaximumValue(s1, s2, s3);
                     Console.ReadLine();
                     break;
                 default:
