@@ -15,7 +15,8 @@ namespace GenericsDemo
             Console.WriteLine("1.Without generic method\n" +
                 "2.With generic method\n" +
                 "3.With generic class\n" +
-                "4.Find maximum value");
+                "4.Find maximum value\n" +
+                "5.Find maximum Generic");
             int option = Convert.ToInt32(Console.ReadLine());
             int[] arr = { 20, 30, 40 };
             double[] doublearr = { 20.67, 30, 40.34 };
@@ -53,6 +54,11 @@ namespace GenericsDemo
                     FindMaxValue.FindMaximumValue(x, y, z);
                     Console.WriteLine("\n{0} {1} {2}", s1, s2, s3);
                     FindMaxValue.FindMaximumValue(s1, s2, s3);
+                    Console.ReadLine();
+                    break;
+                case 5:
+                    MaxValueGeneric<int>.FindMaximumValue(first, second, third);
+                    
                     Console.ReadLine();
                     break;
                 default:
