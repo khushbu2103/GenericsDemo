@@ -12,12 +12,16 @@ namespace GenericsDemo
         static void Main(string[] args)
         {
             Console.WriteLine("please select any program");
-            Console.WriteLine("1.Without generic method\n2.With generic method\n3.With generic class\n4.Find maximum value");
+            Console.WriteLine("1.Without generic method\n" +
+                "2.With generic method\n" +
+                "3.With generic class\n" +
+                "4.Find maximum value");
             int option = Convert.ToInt32(Console.ReadLine());
             int[] arr = { 20, 30, 40 };
             double[] doublearr = { 20.67, 30, 40.34 };
             char[] chararr = { 'a', 'b', 'c', };
             int first = 30, second = 50, third = 60;
+            float x = 76.65f, y = 65.87f, z = 34.54f; 
             switch (option)
             {
                 case 1:
@@ -44,6 +48,8 @@ namespace GenericsDemo
                 case 4:
                     Console.WriteLine("{0} {1} {2}", first, second, third);
                     FindMaxValue.FindMaximumValue(first, second, third);
+                    Console.WriteLine("\n{0} {1} {2}", x, y, z);
+                    FindMaxValue.FindMaximumValue(x, y, z);
                     Console.ReadLine();
                     break;
                 default:
