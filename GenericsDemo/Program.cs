@@ -57,8 +57,10 @@ namespace GenericsDemo
                     Console.ReadLine();
                     break;
                 case 5:
-                    MaxValueGeneric<int>.FindMaximumValue(first, second, third);
-                    
+                    //MaxValueGeneric<int>.FindMaximumValue(first, second, third);
+                    MaxValueGeneric<int> maxValueGeneric = new MaxValueGeneric<int> (first, second, third);
+                    maxValueGeneric.TestMaxValue();
+
                     Console.ReadLine();
                     break;
                 default:
